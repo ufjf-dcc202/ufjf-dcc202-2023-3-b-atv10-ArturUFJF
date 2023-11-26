@@ -1,9 +1,13 @@
-import { deJoaoParaMaria, deMariaParaJoao, getMaria, getJoao, setMaria, setJoao, maria, joao } from '../src/joaoEMaria.js';
+import { deJoaoParaMaria, getMaria, getJoao } from '../src/joaoEMaria.js';
 
-setMaria(3);
-setJoao(2);
-let retornoMaria = getMaria();
-let retornoJoao = getJoao();
-deMariaParaJoao();
+console.log('módulo main')
+
+console.log('João tem ', getJoao(), ' maçãs!');
+console.log('Maria tem ', getMaria(), ' maçãs!');
+
 deJoaoParaMaria();
+
+console.log('João tem ', getJoao(), ' maçãs!');
+console.log('Maria tem ', getMaria(), ' maçãs!');
+
 

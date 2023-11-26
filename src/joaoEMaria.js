@@ -1,3 +1,5 @@
+console.log('Módulo joaoEMaria');
+
 let maria = 2;
 let joao = 1;
 
@@ -20,11 +22,25 @@ return joao;
 }
 
 function setMaria(altera){
-maria=altera;
+    if (altera > 0)
+    {
+        maria = altera;
+    }
+    else
+    {
+        maria = 0;
+    }
 }
 
 function setJoao(altera2){
-joao=altera2;
+    if(altera2 > 0)
+    {
+        joao = altera2;
+    }
+    else
+    {
+        joao = 0;
+    }
 }
-export {getMaria, getJoao, deMariaParaJoao, deJoaoParaMaria, setMaria, setJoao, maria, joao};
+export {getMaria, getJoao, deMariaParaJoao, deJoaoParaMaria, setMaria, setJoao};
 
